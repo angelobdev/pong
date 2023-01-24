@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
+:root {
+  --background-color: #fceab7;
+
+  --title-color: #69a297;
+  --text-color: #b26e63;
+
+  --href-color: #442f38;
+  --href-color-hover: #442f3855;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
 }
 
 html,
 body {
-  background-color: bisque;
+  background-color: var(--background-color);
 
   display: flex;
   flex-direction: column;
@@ -18,12 +30,78 @@ body {
   padding: 0;
 }
 
+/* TITLE */
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title > h1 {
+  color: var(--title-color);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#title > h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+}
+
+#title > p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* GAME CONTAINER */
+
+#game-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-container > .left-controls,
+.right-controls {
+  /* background-color: blue; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 1em;
+  margin-right: 1em;
+
+  width: 8vw;
+  height: 40vh;
+}
+
+#game-container > * > img {
+  /* background-color: red; */
+  height: 100%;
+}
+
 canvas {
   border: 1px solid black;
   padding: 0;
   margin: 0;
 }
 
+/* FOOTER */
+
+#footer {
+  background-color: #fff5;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
 a {
-  color: #000;
+  color: var(--href-color);
+}
+
+a:hover {
+  color: var(--href-color-hover);
 }

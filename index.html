@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pong! by @angelobdev</title>
+    <title>Pong!</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
     <script src="pong.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Pong game</h1>
-    <main></main>
+    <div id="title">
+      <h1>Pong!</h1>
+      <h2>May the best man win!</h2>
+    </div>
+    <div id="game-container">
+      <div class="left-controls">
+        <img src="images/left-controls.png" />
+      </div>
+      <main></main>
+      <div class="right-controls">
+        <img src="images/right-controls.png" />
+      </div>
+    </div>
     <p>
-      Made with ❤️ by
-      <a href="https://github.com/angelobdev" target="_blank">angelobdev</a>
+      Press "R" to restart the game. <br />
+      Hit SPACEBAR to pause.
     </p>
+    <div id="footer">
+      <p>
+        Made with ❤️ by
+        <a href="https://github.com/angelobdev" target="_blank">angelobdev</a>
+        <br />
+        Source code can be found in my
+        <a href="https://github.com/angelobdev/pong">github</a>.
+      </p>
+    </div>
   </body>
 </html>
